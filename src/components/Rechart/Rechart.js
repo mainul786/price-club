@@ -48,12 +48,14 @@ const Rechart = () => {
     ]
 
     return (
-        <LineChart width={730} height={250} data={data}>
+        <div className='mt-3'>
+            <LineChart width={730} height={250} data={data}>
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
             <Line type="monotone" dataKey="pv" stroke="#8884d8" />
         </LineChart>
+        </div>
     );
 };
 
