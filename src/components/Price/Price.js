@@ -8,7 +8,7 @@ const Price = ({ price }) => {
     console.log(features);
     features.map( feature => console.log(feature))
     return (
-        <div className=' bg-blue-400 m-3 p-3  rounded-xl'>
+        <div className=' bg-blue-400 m-3 p-3 rounded-xl'>
             <div>
                 <h1><span className='text-white text-5xl'>{price.price}</span>
                     <span>/month</span>
@@ -23,7 +23,7 @@ const Price = ({ price }) => {
                 feature={feature}
                 ></Features>)
              }
-             <button className='bg-green-500 rounded-md py-2 mt-4'>Add To Cart</button>
+             <button className='bg-green-500 text-3xl text-white w-full rounded-md py-2 mt-4'>Add To Cart</button>
             </div>
         
     );
